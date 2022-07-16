@@ -1,5 +1,6 @@
 void main(List<String> args) {
   var p = Person("Jason", 38);
+  p();
 }
 
 class Person {
@@ -14,5 +15,6 @@ class Person {
     print(age);
   }
 
+  void call() => print("Name is $name, Age is $age");
   //Person.withName(String name);
 }
